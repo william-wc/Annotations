@@ -1,6 +1,6 @@
 # I - Learning the Shell
 
-[Prev](../Intro.md) | [Next]()
+[Prev](../Intro.md) | [Next](ManipulatingFilesAndDirectories.md)
 
 Exploration of the basic language of the command line, including such things as the structure of commands, filesystem navigation, command line editing, and finding help and documentation for commands
 
@@ -90,4 +90,4 @@ In Unix-like operating systems **everything is a file**
 | /usr/share | Contains all the shared data used by programs in /usr/bin (default configuration files) |
 | /var      | Where data that is likely to change is stored, databases, spool files, user mail, etc |
 
-[Prev](../Intro.md) | [Next]()
+[Prev](../Intro.md) | [Next](ManipulatingFilesAndDirectories.md)
