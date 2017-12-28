@@ -5,7 +5,7 @@
 
 This book is separated into four major categories
 
-## I - [Learning the Shell]()
+## I - [Learning the Shell](SectionI/LearningTheShell.md)
 
 Exploration of the basic language of the command line, including such things as the structure of commands, filesystem navigation, command line editing, and finding help and documentation for commands
 
