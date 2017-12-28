@@ -1,6 +1,6 @@
 # Manipulating Files and Directories
 
-[Prev](LearningTheShell.md) | [Next]()
+[Prev](LearningTheShell.md) | [Next](SymbolicLinks.md)
 
 `cp`: Copy files and directories
 `mv`: Move/rename files and directories
@@ -89,4 +89,4 @@ The `rm` command is used to remove (delete) files and directories
 |:----------|:--------|
 | f, force  | Ignore nonexistent files and do not prompt (overrides `--interactive` option) |
 
-[Prev](LearningTheShell.md) | [Next]()
+[Prev](LearningTheShell.md) | [Next](SymbolicLinks.md)
