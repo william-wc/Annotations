@@ -1,6 +1,6 @@
 # Symbolic links
 
-[Prev](ManipulatingFilesAndDirectories.md) | [Next]()
+[Prev](ManipulatingFilesAndDirectories.md) | [Next](WorkingWithCommands.md)
 
 `lrwxrwxrwx 1 root root 11 2012-08-11 07:34 libc.so.6 -> libc-2.6.so`
 
@@ -31,4 +31,4 @@ The `ln` command is used to create either **hard** or **symbolic** links
 `ln file link` - creates a hard link
 `ln -s item link` - creates a symbolic link where `item` is either a file or directory
 
-[Prev](ManipulatingFilesAndDirectories.md) | [Next]()
+[Prev](ManipulatingFilesAndDirectories.md) | [Next](WorkingWithCommands.md)
