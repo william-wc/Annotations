@@ -1,6 +1,6 @@
 # Working with Commands
 
-[Prev](SymbolicLinks.md) | [Next]()
+[Prev](SymbolicLinks.md) | [Next](Redirection.md)
 
 What exactly are **commands**:
 
@@ -113,4 +113,4 @@ The alias `foo` will:
 2. List directory contents with `ls`
 3. Go back to where it was before with `cd -`
 
-[Prev](SymbolicLinks.md) | [Next]()
+[Prev](SymbolicLinks.md) | [Next](Redirection.md)
