@@ -1,6 +1,6 @@
 # Advanced Keyboard Tricks
 
-[Prev](SeeingTheWorldAsTheShellSeesIt.md) | [Next]()
+[Prev](SeeingTheWorldAsTheShellSeesIt.md) | [Next](Permissions.md)
 
 ## Cursor Movement
 
@@ -54,4 +54,4 @@ Another way of searching is by using reverse-index-search (CTRL-R)
 | !string   | Repeat last history list item starting with *string* |
 | !?string  | Repeat last history list item containing *string* |
 
-[Prev](SeeingTheWorldAsTheShellSeesIt.md) | [Next]()
+[Prev](SeeingTheWorldAsTheShellSeesIt.md) | [Next](Permissions.md)
