@@ -1,6 +1,6 @@
 # Permissions
 
-[Prev](AdvancedKeyboardTricks.md) | [Next](Processes.md)
+[Intro](../Intro.md) | [Prev](AdvancedKeyboardTricks.md) | [Next](Processes.md)
 
 `id` - Display user identity
 `chmod` - Change a file's mode
@@ -114,4 +114,4 @@ Sets default permissions given to a file when it is created, uses octal notation
 `:admins` - Changes the group owner to the group `admins`. File owner is unchanged
 `bob:` - Change file owner from current user to user `bob` and changes the group owner to the login group of user `bob`
 
-[Prev](AdvancedKeyboardTricks.md) | [Next](Processes.md)
+[Intro](../Intro.md) | [Prev](AdvancedKeyboardTricks.md) | [Next](Processes.md)

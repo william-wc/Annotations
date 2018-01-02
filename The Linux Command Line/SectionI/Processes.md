@@ -1,6 +1,6 @@
 # Processes
 
-[Prev](Permissions.md) | [Next]()
+[Intro](../Intro.md) | [Prev](Permissions.md) | [Next]()
 
 Modern operating systems are usually *multitasking*, creating a illusion of doing more than one thing simultaneously by rapidly switching from one executing program to another
 The Linux kernel manages this through the use of *processes*, these are how Linux organizes the different programs waiting for their turn at the CPU
@@ -193,4 +193,4 @@ $ killall xlogo
 | xload  | A graphical program that draws a graph showing system load over time |
 | tload  | Similar to xload but draws the graph in the terminal |
 
-[Prev](Permissions.md) | [Next]()
+[Intro](../Intro.md) | [Prev](Permissions.md) | [Next]()

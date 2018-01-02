@@ -1,6 +1,6 @@
 # Pipelines
 
-[Prev](Redirection.md) | [Next](SeeingTheWorldAsTheShellSeesIt.md)
+[Intro](../Intro.md) | [Prev](Redirection.md) | [Next](SeeingTheWorldAsTheShellSeesIt.md)
 
 The ability of commands to read data from standard input and send to standard output
 Uses the pipe operator `|`, the standard output of one command can be `piped` into the standard input of another
@@ -81,4 +81,4 @@ This allows capturing a pipeline's contents at an intermediate stage of processi
 `ls /usr/bin | tee ls.txt | grep zip`
 Lists all in `/usr/bin`, sends it to `ls.txt` and also sends it to `grep zip`
 
-[Prev](Redirection.md) | [Next](SeeingTheWorldAsTheShellSeesIt.md)
+[Intro](../Intro.md) | [Prev](Redirection.md) | [Next](SeeingTheWorldAsTheShellSeesIt.md)

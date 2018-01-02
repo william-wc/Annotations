@@ -1,6 +1,6 @@
 # Seeing the World as the Shell Sees It
 
-[Prev](Pipelines.md) | [Next](AdvancedKeyboardTricks.md)
+[Intro](../Intro.md) | [Prev](Pipelines.md) | [Next](AdvancedKeyboardTricks.md)
 
 Each time a command line is typed, `bash` performs several processes upon the text before it carries out the command
 The process that makes this happen is called *expansion*, something enters and it is expanded into something else before the shell acts upon it
@@ -134,4 +134,4 @@ To quote only a single character it's possible by escaping it
 
 `echo "The balance for user $USER is: \$5.00"` -> `The balance for user me is: $5.00`
 
-[Prev](Pipelines.md) | [Next](AdvancedKeyboardTricks.md)
+[Intro](../Intro.md) | [Prev](Pipelines.md) | [Next](AdvancedKeyboardTricks.md)

@@ -1,6 +1,6 @@
 # Redirection
 
-[Prev](WorkingWithCommands.md) | [Next](Pipelines.md)
+[Intro](../Intro.md) | [Prev](WorkingWithCommands.md) | [Next](Pipelines.md)
 
 **I/O redirection** which means redirecting the input and output of commands to and from files, as well as connect multiple commands to amke powerful command *pipelines*
 
@@ -86,4 +86,4 @@ Creates a file `lazy_dog.txt` containing the followed text
 `cat < lazy_dog.txt`
 Using `<` redirection operator, we change the source of standard input form keyboard to the file `lazy_dog.txt`
 
-[Prev](WorkingWithCommands.md) | [Next](Pipelines.md)
+[Intro](../Intro.md) | [Prev](WorkingWithCommands.md) | [Next](Pipelines.md)
