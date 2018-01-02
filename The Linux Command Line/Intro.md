@@ -5,9 +5,19 @@
 
 This book is separated into four major categories
 
-## I - [Learning the Shell]()
+## I - [Learning the Shell](SectionI/LearningTheShell.md)
 
 Exploration of the basic language of the command line, including such things as the structure of commands, filesystem navigation, command line editing, and finding help and documentation for commands
+
+1. [Manipulating Files and Directories](SectionI/ManipulatingFilesAndDirectories.md)
+2. [Symbolic Links](SectionI/SymbolicLinks.md)
+3. [Working with Commands](SectionI/WorkingWithCommands.md)
+4. [Redirection](SectionI/Redirection.md)
+5. [Pipelines](SectionI/Pipelines.md)
+6. [Seeing the World as the Shell Sees It](SectionI/SeeingTheWorldAsTheShellSeesIt.md)
+7. [Advanced Keyboard Tricks](SectionI/AdvancedKeyboardTricks.md)
+8. [Permissions](SectionI/Permissions.md)
+9. [Processes](SectionI/Processes.md)
 
 ## II - [Configuration and the Environment]()
 
