@@ -19,9 +19,13 @@ Exploration of the basic language of the command line, including such things as 
 8. [Permissions](SectionI/Permissions.md)
 9. [Processes](SectionI/Processes.md)
 
-## II - [Configuration and the Environment]()
+## II - [Configuration and the Environment](SectionII/TheEnvironment.md)
 
 Covers editing configuration files that control the computer's operation from the command line
+
+1. [The Environment](SectionII/TheEnvironment.md)
+2. [A Gentle Introduction to vi](SectionII/GentleIntroductionToVI.md)
+3. [Customizing the Prompt](SectionII/CustomizingThePrompt.md)
 
 ## III - [Common Tasks and Essential Tools]()
 
