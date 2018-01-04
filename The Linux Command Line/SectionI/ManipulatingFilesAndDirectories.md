@@ -12,13 +12,13 @@
 
 Wildcards (or globbing) allows the selection of filenames based on patterns of characters
 
-| Wildcard  | Matches |
-|:----------|:--------|
-| *         | Any characters |
-| ?         | Any single character |
-| \[characters\] | Any character within the set of **characters** |
-| \[!characters\] | Any character **not** member of set **characters** |
-| \[\[:class:\]\] | Any character that is a member of the specified **class** |
+| Wildcard          | Matches |
+|:------------------|:--------|
+| *                 | Any characters |
+| ?                 | Any single character |
+| \[characters\]    | Any character within the set of **characters** |
+| \[!characters\]   | Any character **not** member of set **characters** |
+| \[\[:class:\]\]   | Any character that is a member of the specified **class** |
 
 | Character class   | Matches |
 |:------------------|:--------|
@@ -28,17 +28,17 @@ Wildcards (or globbing) allows the selection of filenames based on patterns of c
 | \[:lower:\]       | Any lowercase letter |
 | \[:upper:\]       | Any uppercase letter |
 
-| Pattern   | Matches |
-|:----------|:--------|
-| *         | All files |
-| g*        | Any file beginning with `g` |
-| b*.txt    | Any file beginning with `b` followed by any characters, ending with `.txt` |
-| Data???   | Any file beginning with `Data` followed by exactly three characters |
-| \[abc\]*  | Any file beginning with either `a`, `b` or `c` |
-| BACKUP.\[0-9\] | Any file beginning with `BACKUP.` followed by exactly one number |
-| \[\[:upper:\]\]* | Any file beginning with an uppercase letter |
-| \[!:digit:\]\]* | Any file not beginning with a numeral |
-| *\[\[:lower:\]123\] | Any file ending with a lowercase letter or the numerals 1, 2 or 3 |
+| Pattern               | Matches |
+|:----------------------|:--------|
+| *                     | All files |
+| g*                    | Any file beginning with `g` |
+| b*.txt                | Any file beginning with `b` followed by any characters, ending with `.txt` |
+| Data???               | Any file beginning with `Data` followed by exactly three characters |
+| \[abc\]*              | Any file beginning with either `a`, `b` or `c` |
+| BACKUP.\[0-9\]        | Any file beginning with `BACKUP.` followed by exactly one number |
+| \[\[:upper:\]\]*      | Any file beginning with an uppercase letter |
+| \[!:digit:\]\]*       | Any file not beginning with a numeral |
+| *\[\[:lower:\]123\]   | Any file ending with a lowercase letter or the numerals 1, 2 or 3 |
 
 It's also possible to specify a character range
 `[a-z]`: any lowercase char from `a` to `z`
@@ -59,13 +59,13 @@ It can be used two different ways
 `cp item1 item2 dir1` - copy `file1` and `file2` into `dir1` (`dir1` must exists)
 `cp dir1/* dir2` - all files in `dir1` are copied into `dir2`
 
-| Option        | Meaning |
-|:--------------|:--------|
-| a, archive    | Copy the files and directories and all of their attributes (ownerships and permissions) |
-| i, interactive | Before overwritting, prompt the user for confirmation (by default overwrites silently) |
-| r, recursive  | Recusrively copy directories and their contents |
-| u, update     | When copying files from one directory to another, copy only non-existing or newer files |
-| v, verbose    | Display informative messages as the copy is performed |
+| Option            | Meaning |
+|:------------------|:--------|
+| a, archive        | Copy the files and directories and all of their attributes (ownerships and permissions) |
+| i, interactive    | Before overwritting, prompt the user for confirmation (by default overwrites silently) |
+| r, recursive      | Recusrively copy directories and their contents |
+| u, update         | When copying files from one directory to another, copy only non-existing or newer files |
+| v, verbose        | Display informative messages as the copy is performed |
 
 ## Move and Rename Files
 

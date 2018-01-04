@@ -10,7 +10,7 @@
 | sort      | Sort lines of text |
 | uniq      | Report or omit repeated lines |
 | wc        | Print newline, word and byte counts for each files |
-| grep      | Print lines matching a pttern |
+| grep      | Print lines matching a pattern |
 | head      | Output the first part of a file |
 | tail      | Output the last part of a file |
 | tee       | Read form standard input and write to standard output and files |
@@ -27,7 +27,7 @@ Programs as `ls` actually send their results to a special file caleld *standard 
 
 In addition, many programs take input from a facility called *standard input (stdin)*, which is, by default, attached to the keyboard
 
-I/O redirection allows us to change where output goes and where input comes from
+**I/O** redirection allows us to change where output goes and where input comes from
 
 ### Redirecting **Standard Output**
 
