@@ -1,6 +1,6 @@
 # Customizing the Prompt
 
-[Intro](../Intro.md) | [Prev](GentleIntroductionToVI.md) | [Next]()
+[Intro](../Intro.md) | [Prev](GentleIntroductionToVI.md)
 
 ## Anatomy of a Promp
 
@@ -94,4 +94,4 @@ Escape codes can be used to position the cursor, this is commonly used to provid
 | `\033[s`    | Store the current cursor position |
 | `\033[u`    | Recall the stored cursor position |
 
-[Intro](../Intro.md) | [Prev](GentleIntroductionToVI.md) | [Next]()
+[Intro](../Intro.md) | [Prev](GentleIntroductionToVI.md)
