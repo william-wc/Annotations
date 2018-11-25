@@ -1,5 +1,12 @@
 # Docker
 
+https://docs.docker.com/engine/reference/builder/
+https://www.raywenderlich.com/9159-docker-on-macos-getting-started?__s=4r3nnfjce6xekxqwxn9p
+https://devhints.io/docker
+https://github.com/veggiemonk/awesome-docker
+https://github.com/konstruktoid/Docker/blob/master/Security/CheatSheet.adoc
+https://docs.docker.com/get-started/
+
 ## Cheat sheet
 
 ```shell
@@ -315,7 +322,7 @@ ENV <key> <value>       # places a single key-value pair
 ENV <key>=<value> ...   # can place multiple key-value pairs
 ```
 
-The `ENV` instruction sets the environment variable `<key>` to the value `<value>`.
+The `ENV` instruction sets the environment variable `key` to the value `value`
 
 ```Dockerfile
 ENV myName John Doe
@@ -369,4 +376,72 @@ ADD --chown=10:11 files* /somedir/
 - If `<dest>` does not end with a slash, then it'll be considered a regular file and the contents of `<src>` will be written at `<dest>`
 - If `<dest>` doesn't exist, it is created along with all missing directories in its path
 
+---
+
+```Dockerfile
+ENTRYPOINT ["executable", "param1", "param2"]   # exec form, preferred
+ENTRYPOINT command param1 param2                # shell form
+```
+
+An `ENTRYPOINT` allows you to configure a container that will run as an executable.
+Command line arguments to `docker run <image>` will be appended after all elements in an `exec` form `ENTRYPOINT`, and will override all elements specified using `CMD`.
+
+- shell form prevents any `CMD` or `run` command line arguments from being used
+- Only the last `ENTRYPOINT` instruction in the `Dockerfile` will have an effect
+
+```Dockerfile
+FROM        ubuntu
+ENTRYPOINT  ["top", "-b"]
+CMD         ["-c"]
+```
+
+### How CMD and ENTRYPOINT interact
+
+Both instructions define what command gets executed when running a container
+
+- Dockerfile should specify at least one `CMD` or `ENTRYPOINT`
+- `ENTRYPOINT` should be defined when using the container as an executable
+- `CMD` should be used as a way of defining default arguments for an `ENTRYPOINT` or for executing ad-hoc command in a container
+- `CMD` will be overriden when running the container with alternative arguments
+
+---
+
+```Dockerfile
+VOLUME ["/data"]
+```
+
+The `VOLUME` instruction creates a mount point with the specified name
+`VOLUME /var/log`
+`VOLUME /var/log /var/db`
+
+`docker run` command initializes the created volume with any data that exists at the specified location within the base image
+
+- If any build steps change the data within the volume after it has been declared, those changes will be discarded
+- JSON formatting
+- The host directory is declared at container run-time
+
+---
+
+```Dockerfile
+WORKDIR /path/to/workdir
+```
+
+Sets the working directory for any `RUN`, `CMD`, `ENTRYPOINT`, `COPY` and `ADD` instructions.
+It can be used multiple times, and will be relative to the previous `WORKDIR` instruction.
+
+```Dockerfile
+WORKDIR /a  # /a
+WORKDIR b   # /a/b
+WORKDIR c   # /a/b/c
+```
+
+---
+
+## List of things to be covered
+
+- [ ] [The ENV file][the-env-file] - for securing sensitive info when running containers
+- [ ] [Security][security-link]
+
 [arg-from-interaction]: https://docs.docker.com/engine/reference/builder/#understand-how-arg-and-from-interact
+[the-env-file]: https://docs.docker.com/compose/environment-variables/#/the-env-file
+[security-link]: https://github.com/konstruktoid/Docker/blob/master/Security/CheatSheet.adoc
