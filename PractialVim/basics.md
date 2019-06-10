@@ -24,17 +24,29 @@ Keep your hands in the standard position and use the commands:
 `C-p` | `` Move to previous line
 
 `C-a` Move to beginning of line
-`C-e` | `M-x move-end-of-line` Move to end of line
+`C-e` | `M-x move-end-of-line` | `$` Move to end of line
 
 `M-a` Move back to beginning of sentence
 `M-e` Move forward to end of sentence
 
-`M-<` / `M->` Move to the beginning/end of the buffer
+`M-<` | `gg` Move to the beginning of the buffer
+`M->` | `G`  Move to the end of the buffer
 
 `C-u` repeat command
 - `C-u 8 *` repeats '*' 8 times
 
+`%` while cursor is in `(,),[,],{, or }` locates the matching pair
+
 ## Inserting and Deleting
+
+`x`: delete char under the cursor
+`i`: insert text at cursor
+
+`a`: Append text AFTER the character under the cursor
+`A`: Append text at the END of the line
+
+`r`: Replaces char
+`R`: Replaces text (keeps replacing while typing)
 
 `M-<DEL>` Kill the word immediately before the cursor
 `M-d` Kill the word immediately after the cursor
@@ -42,14 +54,27 @@ Keep your hands in the standard position and use the commands:
 `C-k` Kill from the cursor position to the **end of line**
 `M-k` Kill to the end of the current **sentence**
 
-> **Killing** text can be reinserted (at any position) whereas **deleted*** text cannot
+`o`: opens a line BELOW the cursor
+`O`: opens a line ABOVE the cursor
 
-Yanking reinserts the last killed text `C-y` | `s-v`
-When doing several `C-k`'s in a row, all of the killed text is saved together, so that one `C-y` will yank all of the lines at once.
+> **Killing** text can be reinserted (at any position) whereas **deleted*** text
+> cannot
+
+Yanking reinserts the last killed text `C-y` | `s-v` When doing several `C-k`'s
+in a row, all of the killed text is saved together, so that one `C-y` will yank
+all of the lines at once.
+
+`dw`: delete from cursor to the end of a word
+`d$`: delete from cursor to the end of a line
+`D`: deletes line preserving line break
+`dd`: deletes whole line
+
+`p`: puts the deleted text AFTER the cursor
 
 ## Undo
 
 To simply undo changes with `C-/` or `u`
+`CTRL-R`: redo previous undo
 
 ## Files and Buffers
 
@@ -67,13 +92,14 @@ To simply undo changes with `C-/` or `u`
 
 ## Auto Save
 
-When you have made changes to a file but didn't explicitly save them yet, emacs periodically creates
-Another file surrounded by `#` (e.g.: `hello.c` -> `#hello.c#`)
+When you have made changes to a file but didn't explicitly save them yet, emacs
+periodically creates Another file surrounded by `#` (e.g.: `hello.c` ->
+`#hello.c#`)
 
 ## Echo Area
 
-When emcas sees that you're typing multicharacter commands slowly, it shows them to you at the bottom
-of the screen
+When emcas sees that you're typing multicharacter commands slowly, it shows them
+to you at the bottom of the screen
 
 ## Searching
 
@@ -85,6 +111,19 @@ Steps:
 2) Type the string you want to search, any matches will start highlighted
 3) Type `C-s` again to search for the next occurance or `<DEL>` to search the previous one
 4) Type `<RET>` to terminate the search
+
+`/text`: searches FORWARD for text
+`?text`: searches BACKWARD for text
+
+> use `n` to find next occurences in same direction or `N` in the opposite direction
+
+## Substitutions
+
+`:s/old/new`
+`:s/old/new/g` replaces all on a line
+`:#,#s/old/new/g` replaces between two # lines
+`:%s/old/new/g` replaces all occurences in the file
+`:%s/old/new/gc` asks for confirmation each time
 
 ## Getting More Help
 
